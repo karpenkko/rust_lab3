@@ -1,0 +1,17 @@
+[
+  {
+    "id": "00cbac07-c2a8-4c0a-bc2b-8f2cdfd85291",
+    "task": "clean",
+    "completed": false
+  },
+  {
+    "id": "05d00b05-99f8-4214-961c-26207524d97a",
+    "task": "work",
+    "completed": false
+  },
+  {
+    "id": "a680a222-3d25-4b26-ad83-da3acbcdaf22",
+    "task": "cook",
+    "completed": true
+  }
+]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Todo App</h1>
+    <div class="add-task">
+      <input type="text" id="newTaskInput" placeholder="Add a new task" onkeydown="checkEnterKeyNewTask(event)"/>
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul class="task-list" id="taskList"></ul>
+    <div class="file-actions">
+      <button onclick="downloadTasks()">Download Tasks</button>
+      <input type="file" id="uploadFileInput" accept=".json" onchange="uploadTasks()" style="display: none;">
+      <button onclick="triggerFileUpload()">Upload Tasks</button>
+    </div>
+  </div>
+
+  <script src="scripts/api.js"></script>
+  <script>
+    fetchTasks();
+  </script>
+</body>
+</html>
